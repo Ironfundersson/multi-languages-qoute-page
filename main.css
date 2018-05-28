@@ -1,0 +1,98 @@
+﻿* {
+  box-sizing: border-box;
+}
+
+/* === BASE LAYOUT === */
+
+.wrapper {
+  width: 100vw;
+  height: calc(100vh - 50px);
+  position: relative;
+}
+
+footer {
+  width: 100vw;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  padding: 10px
+}
+
+.content {
+  position: absolute;
+  top: 20vh;
+  text-align: center;
+  width: 100vw;
+  margin: 0 1vw;
+}
+
+/* === BASE STYLESHEET === */
+
+#hun, #fr {
+  display: none;
+}
+
+body {
+  background: url('https://codeberryschool.github.io/simple-quote-page/assets/freedom.jpg') no-repeat center;
+  background-size: cover;
+}
+
+#eng, #hun, #fr {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.5rem;
+}
+
+.author {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  margin: 0 .25rem;
+}
+
+footer {
+  background-color: rgba(255, 255, 255, .4);
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.42857143;
+  padding: 6px 12px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  white-space: nowrap;
+  vertical-align: middle;
+  color: #000;
+  background-color: rgba(255, 255, 255, .4);
+  border-color: #2e6da4;
+}
+
+.btn:hover {
+  background-color: rgba(150, 150, 150, .4);
+}
+
+@media (min-width: 1440px){
+  .qoute {
+    font-size: 3rem;
+  }
+  .author {
+    font-size: 1.75rem;
+  }
+  a {
+    font-size: 1.5rem;
+  }
+}
